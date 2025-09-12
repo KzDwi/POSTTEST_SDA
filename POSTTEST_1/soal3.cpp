@@ -30,6 +30,14 @@ void urutkanMahasiswa(Mahasiswa mhs[], int n) {
 int main() {
     Mahasiswa mhs[4];
 
+    // Preset Data Mahasiswa [[MATIKAN FOR LOOP INPUT DAN STRUCT DEKLARASI DIATAS SEBELUM MENYALAKAN]]
+    // Mahasiswa mhs[4] = {
+    //     {"Dwi", "028", 3.7},
+    //     {"Aya", "06C", 2.6},
+    //     {"Nia", "09G", 1.9},
+    //     {"Adi", "01A", 3.1}
+    // };
+
     // Input data mahasiswa
     for (int i = 0; i < 4; i++) {
         cout << "Input Mahasiswa ke-" << i + 1 << ":\n";
