@@ -154,13 +154,14 @@ int main() {
             cout << "Masukkan status: ";
             cin.getline(status, 50);
 
+            // Buat Kode Penerbangan
             char kode[20];
             kode[0] = 'J'; kode[1] = 'T'; kode[2] = '-';
             kode[3] = tigaDigit[0]; kode[4] = tigaDigit[1]; kode[5] = tigaDigit[2];
             int idx=6;
             if (counterJadwal > 0) {
                 kode[idx++] = '-';
-                kode[idx++] = (counterJadwal+'0'); // hanya 1 digit tambahan
+                kode[idx++] = (counterJadwal+'0'); // hanya 1 digit tambahan (KZ-NIM-counter)
             }
             kode[idx] = '\0';
             tambahJadwal(kode, tujuan, status);
@@ -175,7 +176,7 @@ int main() {
             cin.getline(status, 50);
 
             char kode[20];
-            kode[0] = 'K'; kode[1] = 'Z'; kode[2] = '-';
+            kode[0] = 'J'; kode[1] = 'T'; kode[2] = '-';
             kode[3] = tigaDigit[0]; kode[4] = tigaDigit[1]; kode[5] = tigaDigit[2];
             int idx=6;
             if (counterJadwal > 0) {
